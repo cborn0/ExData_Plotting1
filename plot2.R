@@ -5,8 +5,4 @@ power$Global_active_power <- as.numeric(as.character((power$Global_active_power)
 
 
 
-hist(power$Global_active_power,main = "Global Active Power" ,xlab = "Global Active Power (kilowatts)", col = "red", breaks = 11)
-
-plot(as.POSIXct(paste(power$Date, power$Time), format="%Y-%m-%d %H:%M:%S"), power$Sub_metering_1,  type="l", ylab = "Energy sub metering", xlab ='')
-plot(as.POSIXct(paste(power$Date, power$Time), format="%Y-%m-%d %H:%M:%S"), power$Sub_metering_1,  type="l", ylab = "Energy sub metering", xlab ='')
-plot(as.POSIXct(paste(power$Date, power$Time), format="%Y-%m-%d %H:%M:%S"), power$Sub_metering_2,  type="l", ylab = "Energy sub metering", xlab ='', color = 'red')
+plot(as.POSIXct(paste(power$Date, power$Time), format="%Y-%m-%d %H:%M:%S"), power$Global_active_power,  type="l", ylab = "Global Active Power (kilowatts)", xlab ='')
